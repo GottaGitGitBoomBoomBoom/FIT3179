@@ -1,0 +1,542 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bubble Chart for Renewable Energy Investment vs CO2 Reductions with Time Slider (2014-2022)",
+  "data": {
+    "values": [
+      {
+        "Year": 2014,
+        "Country": "Malaysia",
+        "Renewable_Capacity": 21.6,
+        "Renewable_Production": 9.9
+      },
+      {
+        "Year": 2014,
+        "Country": "Indonesia",
+        "Renewable_Capacity": 15.4,
+        "Renewable_Production": 14.5
+      },
+      {
+        "Year": 2014,
+        "Country": "Thailand",
+        "Renewable_Capacity": 20.6,
+        "Renewable_Production": 8.2
+      },
+      {
+        "Year": 2014,
+        "Country": "Vietnam",
+        "Renewable_Capacity": 46.7,
+        "Renewable_Production": 43.2
+      },
+      {
+        "Year": 2014,
+        "Country": "Singapore",
+        "Renewable_Capacity": 1.4,
+        "Renewable_Production": 1.5
+      },
+      {
+        "Year": 2014,
+        "Country": "Philippines",
+        "Renewable_Capacity": 28.5,
+        "Renewable_Production": 24.8
+      },
+      {
+        "Year": 2014,
+        "Country": "Cambodia",
+        "Renewable_Capacity": 64.1,
+        "Renewable_Production": 62
+      },
+      {
+        "Year": 2014,
+        "Country": "Myanmar",
+        "Renewable_Capacity": 69.4,
+        "Renewable_Production": 66.4
+      },
+      {
+        "Year": 2014,
+        "Country": "Brunei",
+        "Renewable_Capacity": 0.1,
+        "Renewable_Production": 0
+      },
+      {
+        "Year": 2015,
+        "Country": "Malaysia",
+        "Renewable_Capacity": 24.2,
+        "Renewable_Production": 11.1
+      },
+      {
+        "Year": 2015,
+        "Country": "Indonesia",
+        "Renewable_Capacity": 15.7,
+        "Renewable_Production": 13.8
+      },
+      {
+        "Year": 2015,
+        "Country": "Thailand",
+        "Renewable_Capacity": 21.2,
+        "Renewable_Production": 10.6
+      },
+      {
+        "Year": 2015,
+        "Country": "Vietnam",
+        "Renewable_Capacity": 43.7,
+        "Renewable_Production": 36.1
+      },
+      {
+        "Year": 2015,
+        "Country": "Singapore",
+        "Renewable_Capacity": 1.6,
+        "Renewable_Production": 1.7
+      },
+      {
+        "Year": 2015,
+        "Country": "Philippines",
+        "Renewable_Capacity": 29.1,
+        "Renewable_Production": 24.6
+      },
+      {
+        "Year": 2015,
+        "Country": "Cambodia",
+        "Renewable_Capacity": 58.6,
+        "Renewable_Production": 49.9
+      },
+      {
+        "Year": 2015,
+        "Country": "Myanmar",
+        "Renewable_Capacity": 64.8,
+        "Renewable_Production": 62.1
+      },
+      {
+        "Year": 2015,
+        "Country": "Brunei",
+        "Renewable_Capacity": 0.1,
+        "Renewable_Production": 0
+      },
+      {
+        "Year": 2016,
+        "Country": "Malaysia",
+        "Renewable_Capacity": 25.7,
+        "Renewable_Production": 13.2
+      },
+      {
+        "Year": 2016,
+        "Country": "Indonesia",
+        "Renewable_Capacity": 15.5,
+        "Renewable_Production": 15.4
+      },
+      {
+        "Year": 2016,
+        "Country": "Thailand",
+        "Renewable_Capacity": 21.8,
+        "Renewable_Production": 12.4
+      },
+      {
+        "Year": 2016,
+        "Country": "Vietnam",
+        "Renewable_Capacity": 43.8,
+        "Renewable_Production": 37.2
+      },
+      {
+        "Year": 2016,
+        "Country": "Singapore",
+        "Renewable_Capacity": 2,
+        "Renewable_Production": 1.7
+      },
+      {
+        "Year": 2016,
+        "Country": "Philippines",
+        "Renewable_Capacity": 28.2,
+        "Renewable_Production": 23.5
+      },
+      {
+        "Year": 2016,
+        "Country": "Cambodia",
+        "Renewable_Capacity": 57.8,
+        "Renewable_Production": 48.4
+      },
+      {
+        "Year": 2016,
+        "Country": "Myanmar",
+        "Renewable_Capacity": 64.8,
+        "Renewable_Production": 60.4
+      },
+      {
+        "Year": 2016,
+        "Country": "Brunei",
+        "Renewable_Capacity": 0.1,
+        "Renewable_Production": 0
+      },
+      {
+        "Year": 2017,
+        "Country": "Malaysia",
+        "Renewable_Capacity": 22.2,
+        "Renewable_Production": 17.2
+      },
+      {
+        "Year": 2017,
+        "Country": "Indonesia",
+        "Renewable_Capacity": 15.2,
+        "Renewable_Production": 16.3
+      },
+      {
+        "Year": 2017,
+        "Country": "Thailand",
+        "Renewable_Capacity": 20.7,
+        "Renewable_Production": 15
+      },
+      {
+        "Year": 2017,
+        "Country": "Vietnam",
+        "Renewable_Capacity": 41.7,
+        "Renewable_Production": 46.3
+      },
+      {
+        "Year": 2017,
+        "Country": "Singapore",
+        "Renewable_Capacity": 2.1,
+        "Renewable_Production": 1.7
+      },
+      {
+        "Year": 2017,
+        "Country": "Philippines",
+        "Renewable_Capacity": 28,
+        "Renewable_Production": 23.9
+      },
+      {
+        "Year": 2017,
+        "Country": "Cambodia",
+        "Renewable_Capacity": 55.9,
+        "Renewable_Production": 42.5
+      },
+      {
+        "Year": 2017,
+        "Country": "Myanmar",
+        "Renewable_Capacity": 58.1,
+        "Renewable_Production": 60.9
+      },
+      {
+        "Year": 2017,
+        "Country": "Brunei",
+        "Renewable_Capacity": 0.1,
+        "Renewable_Production": 0
+      },
+      {
+        "Year": 2018,
+        "Country": "Malaysia",
+        "Renewable_Capacity": 22.6,
+        "Renewable_Production": 16.9
+      },
+      {
+        "Year": 2018,
+        "Country": "Indonesia",
+        "Renewable_Capacity": 15.1,
+        "Renewable_Production": 17
+      },
+      {
+        "Year": 2018,
+        "Country": "Thailand",
+        "Renewable_Capacity": 21.8,
+        "Renewable_Production": 18.4
+      },
+      {
+        "Year": 2018,
+        "Country": "Vietnam",
+        "Renewable_Capacity": 41.1,
+        "Renewable_Production": 40.9
+      },
+      {
+        "Year": 2018,
+        "Country": "Singapore",
+        "Renewable_Capacity": 2.4,
+        "Renewable_Production": 1.7
+      },
+      {
+        "Year": 2018,
+        "Country": "Philippines",
+        "Renewable_Capacity": 27.6,
+        "Renewable_Production": 22.8
+      },
+      {
+        "Year": 2018,
+        "Country": "Cambodia",
+        "Renewable_Capacity": 63.9,
+        "Renewable_Production": 59.4
+      },
+      {
+        "Year": 2018,
+        "Country": "Myanmar",
+        "Renewable_Capacity": 53.8,
+        "Renewable_Production": 61.2
+      },
+      {
+        "Year": 2018,
+        "Country": "Brunei",
+        "Renewable_Capacity": 0.1,
+        "Renewable_Production": 0
+      },
+      {
+        "Year": 2019,
+        "Country": "Malaysia",
+        "Renewable_Capacity": 21.9,
+        "Renewable_Production": 16.5
+      },
+      {
+        "Year": 2019,
+        "Country": "Indonesia",
+        "Renewable_Capacity": 14.8,
+        "Renewable_Production": 16.1
+      },
+      {
+        "Year": 2019,
+        "Country": "Thailand",
+        "Renewable_Capacity": 22.3,
+        "Renewable_Production": 19.1
+      },
+      {
+        "Year": 2019,
+        "Country": "Vietnam",
+        "Renewable_Capacity": 47.7,
+        "Renewable_Production": 32.1
+      },
+      {
+        "Year": 2019,
+        "Country": "Singapore",
+        "Renewable_Capacity": 3.5,
+        "Renewable_Production": 1.8
+      },
+      {
+        "Year": 2019,
+        "Country": "Philippines",
+        "Renewable_Capacity": 26.4,
+        "Renewable_Production": 20.2
+      },
+      {
+        "Year": 2019,
+        "Country": "Cambodia",
+        "Renewable_Capacity": 61.2,
+        "Renewable_Production": 49
+      },
+      {
+        "Year": 2019,
+        "Country": "Myanmar",
+        "Renewable_Capacity": 52.6,
+        "Renewable_Production": 51.6
+      },
+      {
+        "Year": 2019,
+        "Country": "Brunei",
+        "Renewable_Capacity": 0.1,
+        "Renewable_Production": 0
+      },
+      {
+        "Year": 2020,
+        "Country": "Malaysia",
+        "Renewable_Capacity": 23.2,
+        "Renewable_Production": 17.8
+      },
+      {
+        "Year": 2020,
+        "Country": "Indonesia",
+        "Renewable_Capacity": 14.4,
+        "Renewable_Production": 18
+      },
+      {
+        "Year": 2020,
+        "Country": "Thailand",
+        "Renewable_Capacity": 22.1,
+        "Renewable_Production": 18
+      },
+      {
+        "Year": 2020,
+        "Country": "Vietnam",
+        "Renewable_Capacity": 55.8,
+        "Renewable_Production": 36.4
+      },
+      {
+        "Year": 2020,
+        "Country": "Singapore",
+        "Renewable_Capacity": 4.1,
+        "Renewable_Production": 1.9
+      },
+      {
+        "Year": 2020,
+        "Country": "Philippines",
+        "Renewable_Capacity": 26.5,
+        "Renewable_Production": 20.6
+      },
+      {
+        "Year": 2020,
+        "Country": "Cambodia",
+        "Renewable_Capacity": 56.4,
+        "Renewable_Production": 49.6
+      },
+      {
+        "Year": 2020,
+        "Country": "Myanmar",
+        "Renewable_Capacity": 44.5,
+        "Renewable_Production": 43.5
+      },
+      {
+        "Year": 2020,
+        "Country": "Brunei",
+        "Renewable_Capacity": 0.1,
+        "Renewable_Production": 0
+      },
+      {
+        "Year": 2021,
+        "Country": "Malaysia",
+        "Renewable_Capacity": 23,
+        "Renewable_Production": 17.9
+      },
+      {
+        "Year": 2021,
+        "Country": "Indonesia",
+        "Renewable_Capacity": 15.5,
+        "Renewable_Production": 18.1
+      },
+      {
+        "Year": 2021,
+        "Country": "Thailand",
+        "Renewable_Capacity": 22.1,
+        "Renewable_Production": 19.3
+      },
+      {
+        "Year": 2021,
+        "Country": "Vietnam",
+        "Renewable_Capacity": 56.2,
+        "Renewable_Production": 44.9
+      },
+      {
+        "Year": 2021,
+        "Country": "Singapore",
+        "Renewable_Capacity": 5.4,
+        "Renewable_Production": 2.1
+      },
+      {
+        "Year": 2021,
+        "Country": "Philippines",
+        "Renewable_Capacity": 26.5,
+        "Renewable_Production": 21.5
+      },
+      {
+        "Year": 2021,
+        "Country": "Cambodia",
+        "Renewable_Capacity": 58,
+        "Renewable_Production": 59.1
+      },
+      {
+        "Year": 2021,
+        "Country": "Myanmar",
+        "Renewable_Capacity": 49.5,
+        "Renewable_Production": 46.4
+      },
+      {
+        "Year": 2021,
+        "Country": "Brunei",
+        "Renewable_Capacity": 0.4,
+        "Renewable_Production": 0
+      },
+      {
+        "Year": 2022,
+        "Country": "Malaysia",
+        "Renewable_Capacity": 22.8,
+        "Renewable_Production": 17.9
+      },
+      {
+        "Year": 2022,
+        "Country": "Indonesia",
+        "Renewable_Capacity": 15,
+        "Renewable_Production": 19.6
+      },
+      {
+        "Year": 2022,
+        "Country": "Thailand",
+        "Renewable_Capacity": 21.4,
+        "Renewable_Production": 20
+      },
+      {
+        "Year": 2022,
+        "Country": "Vietnam",
+        "Renewable_Capacity": 56.7,
+        "Renewable_Production": 52
+      },
+      {
+        "Year": 2022,
+        "Country": "Singapore",
+        "Renewable_Capacity": 6.8,
+        "Renewable_Production": 3
+      },
+      {
+        "Year": 2022,
+        "Country": "Philippines",
+        "Renewable_Capacity": 26.4,
+        "Renewable_Production": 21.6
+      },
+      {
+        "Year": 2022,
+        "Country": "Cambodia",
+        "Renewable_Capacity": 56.9,
+        "Renewable_Production": 65.8
+      },
+      {
+        "Year": 2022,
+        "Country": "Myanmar",
+        "Renewable_Capacity": 49.1,
+        "Renewable_Production": 48.5
+      },
+      {
+        "Year": 2022,
+        "Country": "Brunei",
+        "Renewable_Capacity": 0.4,
+        "Renewable_Production": 0
+      }
+    ]
+  },
+  "mark": "circle",
+  "encoding": {
+    "x": {
+      "field": "Renewable_Capacity",
+      "type": "quantitative",
+      "title": "Renewable Energy Capacity (%MW)"
+    },
+    "y": {
+      "field": "Renewable_Production",
+      "type": "quantitative",
+      "title": "Renewable Energy Production (%GWh)"
+    },
+    "size": {
+      "field": "Renewable_Production",
+      "type": "quantitative",
+      "title": "Renewable Production Size"
+    },
+    "color": {"field": "Country", "type": "nominal", "title": "Country"},
+    "tooltip": [
+      {"field": "Year", "type": "temporal", "title": "Year"},
+      {"field": "Country", "type": "nominal", "title": "Country"},
+      {
+        "field": "Renewable_Capacity",
+        "type": "quantitative",
+        "title": "Capacity (%MW)"
+      },
+      {
+        "field": "Renewable_Production",
+        "type": "quantitative",
+        "title": "Production (%GWh)"
+      }
+    ]
+  },
+  "selection": {
+    "YearSelect": {
+      "type": "single",
+      "fields": ["Year"],
+      "bind": {
+        "input": "range",
+        "min": 2014,
+        "max": 2022,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  },
+  "transform": [{"filter": {"selection": "YearSelect"}}],
+  "config": {}
+}

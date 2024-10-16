@@ -1,0 +1,1676 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Heatmap of CO2 emissions from Manufacturing and Transport with a time slider (2000-2014)",
+  "data": {
+    "values": [
+      {
+        "year": 2000,
+        "country": "Malaysia",
+        "sector": "Manufacturing",
+        "emissions": 22.46
+      },
+      {
+        "year": 2000,
+        "country": "Malaysia",
+        "sector": "Transport",
+        "emissions": 27.99
+      },
+      {
+        "year": 2000,
+        "country": "Indonesia",
+        "sector": "Manufacturing",
+        "emissions": 22.84
+      },
+      {
+        "year": 2000,
+        "country": "Indonesia",
+        "sector": "Transport",
+        "emissions": 24.55
+      },
+      {
+        "year": 2000,
+        "country": "Thailand",
+        "sector": "Manufacturing",
+        "emissions": 20.23
+      },
+      {
+        "year": 2000,
+        "country": "Thailand",
+        "sector": "Transport",
+        "emissions": 29.02
+      },
+      {
+        "year": 2000,
+        "country": "Vietnam",
+        "sector": "Manufacturing",
+        "emissions": 32.63
+      },
+      {
+        "year": 2000,
+        "country": "Vietnam",
+        "sector": "Transport",
+        "emissions": 23.9
+      },
+      {
+        "year": 2000,
+        "country": "Singapore",
+        "sector": "Manufacturing",
+        "emissions": 7.76
+      },
+      {
+        "year": 2000,
+        "country": "Singapore",
+        "sector": "Transport",
+        "emissions": 12.39
+      },
+      {
+        "year": 2000,
+        "country": "Philippines",
+        "sector": "Manufacturing",
+        "emissions": 16.86
+      },
+      {
+        "year": 2000,
+        "country": "Philippines",
+        "sector": "Transport",
+        "emissions": 36.1
+      },
+      {
+        "year": 2000,
+        "country": "Cambodia",
+        "sector": "Manufacturing",
+        "emissions": 3.57
+      },
+      {
+        "year": 2000,
+        "country": "Cambodia",
+        "sector": "Transport",
+        "emissions": 67.35
+      },
+      {
+        "year": 2000,
+        "country": "Myanmar",
+        "sector": "Manufacturing",
+        "emissions": 25.43
+      },
+      {
+        "year": 2000,
+        "country": "Myanmar",
+        "sector": "Transport",
+        "emissions": 37.82
+      },
+      {
+        "year": 2000,
+        "country": "Brunei",
+        "sector": "Manufacturing",
+        "emissions": 3.17
+      },
+      {
+        "year": 2000,
+        "country": "Brunei",
+        "sector": "Transport",
+        "emissions": 18.33
+      },
+      {
+        "year": 2001,
+        "country": "Malaysia",
+        "sector": "Manufacturing",
+        "emissions": 21.94
+      },
+      {
+        "year": 2001,
+        "country": "Malaysia",
+        "sector": "Transport",
+        "emissions": 29.03
+      },
+      {
+        "year": 2001,
+        "country": "Indonesia",
+        "sector": "Manufacturing",
+        "emissions": 22.73
+      },
+      {
+        "year": 2001,
+        "country": "Indonesia",
+        "sector": "Transport",
+        "emissions": 24.33
+      },
+      {
+        "year": 2001,
+        "country": "Thailand",
+        "sector": "Manufacturing",
+        "emissions": 21.04
+      },
+      {
+        "year": 2001,
+        "country": "Thailand",
+        "sector": "Transport",
+        "emissions": 28.36
+      },
+      {
+        "year": 2001,
+        "country": "Vietnam",
+        "sector": "Manufacturing",
+        "emissions": 33.67
+      },
+      {
+        "year": 2001,
+        "country": "Vietnam",
+        "sector": "Transport",
+        "emissions": 23.14
+      },
+      {
+        "year": 2001,
+        "country": "Singapore",
+        "sector": "Manufacturing",
+        "emissions": 8.25
+      },
+      {
+        "year": 2001,
+        "country": "Singapore",
+        "sector": "Transport",
+        "emissions": 12.65
+      },
+      {
+        "year": 2001,
+        "country": "Philippines",
+        "sector": "Manufacturing",
+        "emissions": 13.91
+      },
+      {
+        "year": 2001,
+        "country": "Philippines",
+        "sector": "Transport",
+        "emissions": 39.24
+      },
+      {
+        "year": 2001,
+        "country": "Cambodia",
+        "sector": "Manufacturing",
+        "emissions": 3.26
+      },
+      {
+        "year": 2001,
+        "country": "Cambodia",
+        "sector": "Transport",
+        "emissions": 70.23
+      },
+      {
+        "year": 2001,
+        "country": "Myanmar",
+        "sector": "Manufacturing",
+        "emissions": 28.41
+      },
+      {
+        "year": 2001,
+        "country": "Myanmar",
+        "sector": "Transport",
+        "emissions": 34.39
+      },
+      {
+        "year": 2001,
+        "country": "Brunei",
+        "sector": "Manufacturing",
+        "emissions": 2.78
+      },
+      {
+        "year": 2001,
+        "country": "Brunei",
+        "sector": "Transport",
+        "emissions": 19.49
+      },
+      {
+        "year": 2002,
+        "country": "Malaysia",
+        "sector": "Manufacturing",
+        "emissions": 22.46
+      },
+      {
+        "year": 2002,
+        "country": "Malaysia",
+        "sector": "Transport",
+        "emissions": 28.31
+      },
+      {
+        "year": 2002,
+        "country": "Indonesia",
+        "sector": "Manufacturing",
+        "emissions": 21.12
+      },
+      {
+        "year": 2002,
+        "country": "Indonesia",
+        "sector": "Transport",
+        "emissions": 24.28
+      },
+      {
+        "year": 2002,
+        "country": "Thailand",
+        "sector": "Manufacturing",
+        "emissions": 22.31
+      },
+      {
+        "year": 2002,
+        "country": "Thailand",
+        "sector": "Transport",
+        "emissions": 28.28
+      },
+      {
+        "year": 2002,
+        "country": "Vietnam",
+        "sector": "Manufacturing",
+        "emissions": 32.04
+      },
+      {
+        "year": 2002,
+        "country": "Vietnam",
+        "sector": "Transport",
+        "emissions": 24.21
+      },
+      {
+        "year": 2002,
+        "country": "Singapore",
+        "sector": "Manufacturing",
+        "emissions": 8.96
+      },
+      {
+        "year": 2002,
+        "country": "Singapore",
+        "sector": "Transport",
+        "emissions": 12.81
+      },
+      {
+        "year": 2002,
+        "country": "Philippines",
+        "sector": "Manufacturing",
+        "emissions": 13.06
+      },
+      {
+        "year": 2002,
+        "country": "Philippines",
+        "sector": "Transport",
+        "emissions": 40.13
+      },
+      {
+        "year": 2002,
+        "country": "Cambodia",
+        "sector": "Manufacturing",
+        "emissions": 3.62
+      },
+      {
+        "year": 2002,
+        "country": "Cambodia",
+        "sector": "Transport",
+        "emissions": 59.73
+      },
+      {
+        "year": 2002,
+        "country": "Myanmar",
+        "sector": "Manufacturing",
+        "emissions": 17.94
+      },
+      {
+        "year": 2002,
+        "country": "Myanmar",
+        "sector": "Transport",
+        "emissions": 42.63
+      },
+      {
+        "year": 2002,
+        "country": "Brunei",
+        "sector": "Manufacturing",
+        "emissions": 2.75
+      },
+      {
+        "year": 2002,
+        "country": "Brunei",
+        "sector": "Transport",
+        "emissions": 20.18
+      },
+      {
+        "year": 2003,
+        "country": "Malaysia",
+        "sector": "Manufacturing",
+        "emissions": 22.26
+      },
+      {
+        "year": 2003,
+        "country": "Malaysia",
+        "sector": "Transport",
+        "emissions": 28.71
+      },
+      {
+        "year": 2003,
+        "country": "Indonesia",
+        "sector": "Manufacturing",
+        "emissions": 24.23
+      },
+      {
+        "year": 2003,
+        "country": "Indonesia",
+        "sector": "Transport",
+        "emissions": 22.44
+      },
+      {
+        "year": 2003,
+        "country": "Thailand",
+        "sector": "Manufacturing",
+        "emissions": 21.54
+      },
+      {
+        "year": 2003,
+        "country": "Thailand",
+        "sector": "Transport",
+        "emissions": 28.9
+      },
+      {
+        "year": 2003,
+        "country": "Vietnam",
+        "sector": "Manufacturing",
+        "emissions": 32.55
+      },
+      {
+        "year": 2003,
+        "country": "Vietnam",
+        "sector": "Transport",
+        "emissions": 25.95
+      },
+      {
+        "year": 2003,
+        "country": "Singapore",
+        "sector": "Manufacturing",
+        "emissions": 11.5
+      },
+      {
+        "year": 2003,
+        "country": "Singapore",
+        "sector": "Transport",
+        "emissions": 13.89
+      },
+      {
+        "year": 2003,
+        "country": "Philippines",
+        "sector": "Manufacturing",
+        "emissions": 14.42
+      },
+      {
+        "year": 2003,
+        "country": "Philippines",
+        "sector": "Transport",
+        "emissions": 37.33
+      },
+      {
+        "year": 2003,
+        "country": "Cambodia",
+        "sector": "Manufacturing",
+        "emissions": 3.78
+      },
+      {
+        "year": 2003,
+        "country": "Cambodia",
+        "sector": "Transport",
+        "emissions": 56.72
+      },
+      {
+        "year": 2003,
+        "country": "Myanmar",
+        "sector": "Manufacturing",
+        "emissions": 24.56
+      },
+      {
+        "year": 2003,
+        "country": "Myanmar",
+        "sector": "Transport",
+        "emissions": 37.82
+      },
+      {
+        "year": 2003,
+        "country": "Brunei",
+        "sector": "Manufacturing",
+        "emissions": 2.48
+      },
+      {
+        "year": 2003,
+        "country": "Brunei",
+        "sector": "Transport",
+        "emissions": 17.52
+      },
+      {
+        "year": 2004,
+        "country": "Malaysia",
+        "sector": "Manufacturing",
+        "emissions": 22.72
+      },
+      {
+        "year": 2004,
+        "country": "Malaysia",
+        "sector": "Transport",
+        "emissions": 27.94
+      },
+      {
+        "year": 2004,
+        "country": "Indonesia",
+        "sector": "Manufacturing",
+        "emissions": 25.47
+      },
+      {
+        "year": 2004,
+        "country": "Indonesia",
+        "sector": "Transport",
+        "emissions": 22.42
+      },
+      {
+        "year": 2004,
+        "country": "Thailand",
+        "sector": "Manufacturing",
+        "emissions": 22.31
+      },
+      {
+        "year": 2004,
+        "country": "Thailand",
+        "sector": "Transport",
+        "emissions": 28.36
+      },
+      {
+        "year": 2004,
+        "country": "Vietnam",
+        "sector": "Manufacturing",
+        "emissions": 31.02
+      },
+      {
+        "year": 2004,
+        "country": "Vietnam",
+        "sector": "Transport",
+        "emissions": 25.97
+      },
+      {
+        "year": 2004,
+        "country": "Singapore",
+        "sector": "Manufacturing",
+        "emissions": 12.17
+      },
+      {
+        "year": 2004,
+        "country": "Singapore",
+        "sector": "Transport",
+        "emissions": 13.65
+      },
+      {
+        "year": 2004,
+        "country": "Philippines",
+        "sector": "Manufacturing",
+        "emissions": 14.38
+      },
+      {
+        "year": 2004,
+        "country": "Philippines",
+        "sector": "Transport",
+        "emissions": 37.82
+      },
+      {
+        "year": 2004,
+        "country": "Cambodia",
+        "sector": "Manufacturing",
+        "emissions": 4.2
+      },
+      {
+        "year": 2004,
+        "country": "Cambodia",
+        "sector": "Transport",
+        "emissions": 57.56
+      },
+      {
+        "year": 2004,
+        "country": "Myanmar",
+        "sector": "Manufacturing",
+        "emissions": 18.9
+      },
+      {
+        "year": 2004,
+        "country": "Myanmar",
+        "sector": "Transport",
+        "emissions": 42.7
+      },
+      {
+        "year": 2004,
+        "country": "Brunei",
+        "sector": "Manufacturing",
+        "emissions": 2.44
+      },
+      {
+        "year": 2004,
+        "country": "Brunei",
+        "sector": "Transport",
+        "emissions": 19.72
+      },
+      {
+        "year": 2005,
+        "country": "Malaysia",
+        "sector": "Manufacturing",
+        "emissions": 22.53
+      },
+      {
+        "year": 2005,
+        "country": "Malaysia",
+        "sector": "Transport",
+        "emissions": 26.12
+      },
+      {
+        "year": 2005,
+        "country": "Indonesia",
+        "sector": "Manufacturing",
+        "emissions": 25.6
+      },
+      {
+        "year": 2005,
+        "country": "Indonesia",
+        "sector": "Transport",
+        "emissions": 22.17
+      },
+      {
+        "year": 2005,
+        "country": "Thailand",
+        "sector": "Manufacturing",
+        "emissions": 22.8
+      },
+      {
+        "year": 2005,
+        "country": "Thailand",
+        "sector": "Transport",
+        "emissions": 27.44
+      },
+      {
+        "year": 2005,
+        "country": "Vietnam",
+        "sector": "Manufacturing",
+        "emissions": 30.41
+      },
+      {
+        "year": 2005,
+        "country": "Vietnam",
+        "sector": "Transport",
+        "emissions": 24.33
+      },
+      {
+        "year": 2005,
+        "country": "Singapore",
+        "sector": "Manufacturing",
+        "emissions": 13.68
+      },
+      {
+        "year": 2005,
+        "country": "Singapore",
+        "sector": "Transport",
+        "emissions": 14.76
+      },
+      {
+        "year": 2005,
+        "country": "Philippines",
+        "sector": "Manufacturing",
+        "emissions": 14.58
+      },
+      {
+        "year": 2005,
+        "country": "Philippines",
+        "sector": "Transport",
+        "emissions": 35.18
+      },
+      {
+        "year": 2005,
+        "country": "Cambodia",
+        "sector": "Manufacturing",
+        "emissions": 4.91
+      },
+      {
+        "year": 2005,
+        "country": "Cambodia",
+        "sector": "Transport",
+        "emissions": 56.23
+      },
+      {
+        "year": 2005,
+        "country": "Myanmar",
+        "sector": "Manufacturing",
+        "emissions": 19.3
+      },
+      {
+        "year": 2005,
+        "country": "Myanmar",
+        "sector": "Transport",
+        "emissions": 44.47
+      },
+      {
+        "year": 2005,
+        "country": "Brunei",
+        "sector": "Manufacturing",
+        "emissions": 2.49
+      },
+      {
+        "year": 2005,
+        "country": "Brunei",
+        "sector": "Transport",
+        "emissions": 19.71
+      },
+      {
+        "year": 2006,
+        "country": "Malaysia",
+        "sector": "Manufacturing",
+        "emissions": 23.43
+      },
+      {
+        "year": 2006,
+        "country": "Malaysia",
+        "sector": "Transport",
+        "emissions": 24.1
+      },
+      {
+        "year": 2006,
+        "country": "Indonesia",
+        "sector": "Manufacturing",
+        "emissions": 30.86
+      },
+      {
+        "year": 2006,
+        "country": "Indonesia",
+        "sector": "Transport",
+        "emissions": 19.74
+      },
+      {
+        "year": 2006,
+        "country": "Thailand",
+        "sector": "Manufacturing",
+        "emissions": 24
+      },
+      {
+        "year": 2006,
+        "country": "Thailand",
+        "sector": "Transport",
+        "emissions": 25.41
+      },
+      {
+        "year": 2006,
+        "country": "Vietnam",
+        "sector": "Manufacturing",
+        "emissions": 29.65
+      },
+      {
+        "year": 2006,
+        "country": "Vietnam",
+        "sector": "Transport",
+        "emissions": 23.57
+      },
+      {
+        "year": 2006,
+        "country": "Singapore",
+        "sector": "Manufacturing",
+        "emissions": 14.18
+      },
+      {
+        "year": 2006,
+        "country": "Singapore",
+        "sector": "Transport",
+        "emissions": 15.18
+      },
+      {
+        "year": 2006,
+        "country": "Philippines",
+        "sector": "Manufacturing",
+        "emissions": 16.34
+      },
+      {
+        "year": 2006,
+        "country": "Philippines",
+        "sector": "Transport",
+        "emissions": 35.65
+      },
+      {
+        "year": 2006,
+        "country": "Cambodia",
+        "sector": "Manufacturing",
+        "emissions": 4.73
+      },
+      {
+        "year": 2006,
+        "country": "Cambodia",
+        "sector": "Transport",
+        "emissions": 54.05
+      },
+      {
+        "year": 2006,
+        "country": "Myanmar",
+        "sector": "Manufacturing",
+        "emissions": 20.16
+      },
+      {
+        "year": 2006,
+        "country": "Myanmar",
+        "sector": "Transport",
+        "emissions": 40.63
+      },
+      {
+        "year": 2006,
+        "country": "Brunei",
+        "sector": "Manufacturing",
+        "emissions": 26.35
+      },
+      {
+        "year": 2006,
+        "country": "Brunei",
+        "sector": "Transport",
+        "emissions": 14.29
+      },
+      {
+        "year": 2007,
+        "country": "Malaysia",
+        "sector": "Manufacturing",
+        "emissions": 24.38
+      },
+      {
+        "year": 2007,
+        "country": "Malaysia",
+        "sector": "Transport",
+        "emissions": 23.32
+      },
+      {
+        "year": 2007,
+        "country": "Indonesia",
+        "sector": "Manufacturing",
+        "emissions": 30.25
+      },
+      {
+        "year": 2007,
+        "country": "Indonesia",
+        "sector": "Transport",
+        "emissions": 19.96
+      },
+      {
+        "year": 2007,
+        "country": "Thailand",
+        "sector": "Manufacturing",
+        "emissions": 19.66
+      },
+      {
+        "year": 2007,
+        "country": "Thailand",
+        "sector": "Transport",
+        "emissions": 26.55
+      },
+      {
+        "year": 2007,
+        "country": "Vietnam",
+        "sector": "Manufacturing",
+        "emissions": 29.9
+      },
+      {
+        "year": 2007,
+        "country": "Vietnam",
+        "sector": "Transport",
+        "emissions": 24.99
+      },
+      {
+        "year": 2007,
+        "country": "Singapore",
+        "sector": "Manufacturing",
+        "emissions": 14.54
+      },
+      {
+        "year": 2007,
+        "country": "Singapore",
+        "sector": "Transport",
+        "emissions": 15.25
+      },
+      {
+        "year": 2007,
+        "country": "Philippines",
+        "sector": "Manufacturing",
+        "emissions": 18.94
+      },
+      {
+        "year": 2007,
+        "country": "Philippines",
+        "sector": "Transport",
+        "emissions": 31.84
+      },
+      {
+        "year": 2007,
+        "country": "Cambodia",
+        "sector": "Manufacturing",
+        "emissions": 4.18
+      },
+      {
+        "year": 2007,
+        "country": "Cambodia",
+        "sector": "Transport",
+        "emissions": 55.43
+      },
+      {
+        "year": 2007,
+        "country": "Myanmar",
+        "sector": "Manufacturing",
+        "emissions": 18.53
+      },
+      {
+        "year": 2007,
+        "country": "Myanmar",
+        "sector": "Transport",
+        "emissions": 43.73
+      },
+      {
+        "year": 2007,
+        "country": "Brunei",
+        "sector": "Manufacturing",
+        "emissions": 27.05
+      },
+      {
+        "year": 2007,
+        "country": "Brunei",
+        "sector": "Transport",
+        "emissions": 16.52
+      },
+      {
+        "year": 2008,
+        "country": "Malaysia",
+        "sector": "Manufacturing",
+        "emissions": 22.69
+      },
+      {
+        "year": 2008,
+        "country": "Malaysia",
+        "sector": "Transport",
+        "emissions": 22.92
+      },
+      {
+        "year": 2008,
+        "country": "Indonesia",
+        "sector": "Manufacturing",
+        "emissions": 27.49
+      },
+      {
+        "year": 2008,
+        "country": "Indonesia",
+        "sector": "Transport",
+        "emissions": 22.18
+      },
+      {
+        "year": 2008,
+        "country": "Thailand",
+        "sector": "Manufacturing",
+        "emissions": 21.16
+      },
+      {
+        "year": 2008,
+        "country": "Thailand",
+        "sector": "Transport",
+        "emissions": 24.65
+      },
+      {
+        "year": 2008,
+        "country": "Vietnam",
+        "sector": "Manufacturing",
+        "emissions": 35.01
+      },
+      {
+        "year": 2008,
+        "country": "Vietnam",
+        "sector": "Transport",
+        "emissions": 23.61
+      },
+      {
+        "year": 2008,
+        "country": "Singapore",
+        "sector": "Manufacturing",
+        "emissions": 15.12
+      },
+      {
+        "year": 2008,
+        "country": "Singapore",
+        "sector": "Transport",
+        "emissions": 15.58
+      },
+      {
+        "year": 2008,
+        "country": "Philippines",
+        "sector": "Manufacturing",
+        "emissions": 17.62
+      },
+      {
+        "year": 2008,
+        "country": "Philippines",
+        "sector": "Transport",
+        "emissions": 31.18
+      },
+      {
+        "year": 2008,
+        "country": "Cambodia",
+        "sector": "Manufacturing",
+        "emissions": 3.98
+      },
+      {
+        "year": 2008,
+        "country": "Cambodia",
+        "sector": "Transport",
+        "emissions": 54.38
+      },
+      {
+        "year": 2008,
+        "country": "Myanmar",
+        "sector": "Manufacturing",
+        "emissions": 25.73
+      },
+      {
+        "year": 2008,
+        "country": "Myanmar",
+        "sector": "Transport",
+        "emissions": 26.91
+      },
+      {
+        "year": 2008,
+        "country": "Brunei",
+        "sector": "Manufacturing",
+        "emissions": 26.73
+      },
+      {
+        "year": 2008,
+        "country": "Brunei",
+        "sector": "Transport",
+        "emissions": 15.65
+      },
+      {
+        "year": 2009,
+        "country": "Malaysia",
+        "sector": "Manufacturing",
+        "emissions": 17.44
+      },
+      {
+        "year": 2009,
+        "country": "Malaysia",
+        "sector": "Transport",
+        "emissions": 25.18
+      },
+      {
+        "year": 2009,
+        "country": "Indonesia",
+        "sector": "Manufacturing",
+        "emissions": 26.41
+      },
+      {
+        "year": 2009,
+        "country": "Indonesia",
+        "sector": "Transport",
+        "emissions": 24.34
+      },
+      {
+        "year": 2009,
+        "country": "Thailand",
+        "sector": "Manufacturing",
+        "emissions": 21.61
+      },
+      {
+        "year": 2009,
+        "country": "Thailand",
+        "sector": "Transport",
+        "emissions": 27.19
+      },
+      {
+        "year": 2009,
+        "country": "Vietnam",
+        "sector": "Manufacturing",
+        "emissions": 34.89
+      },
+      {
+        "year": 2009,
+        "country": "Vietnam",
+        "sector": "Transport",
+        "emissions": 25.59
+      },
+      {
+        "year": 2009,
+        "country": "Singapore",
+        "sector": "Manufacturing",
+        "emissions": 21.67
+      },
+      {
+        "year": 2009,
+        "country": "Singapore",
+        "sector": "Transport",
+        "emissions": 16.61
+      },
+      {
+        "year": 2009,
+        "country": "Philippines",
+        "sector": "Manufacturing",
+        "emissions": 15.62
+      },
+      {
+        "year": 2009,
+        "country": "Philippines",
+        "sector": "Transport",
+        "emissions": 32.6
+      },
+      {
+        "year": 2009,
+        "country": "Cambodia",
+        "sector": "Manufacturing",
+        "emissions": 3.91
+      },
+      {
+        "year": 2009,
+        "country": "Cambodia",
+        "sector": "Transport",
+        "emissions": 61.61
+      },
+      {
+        "year": 2009,
+        "country": "Myanmar",
+        "sector": "Manufacturing",
+        "emissions": 28.45
+      },
+      {
+        "year": 2009,
+        "country": "Myanmar",
+        "sector": "Transport",
+        "emissions": 30.44
+      },
+      {
+        "year": 2009,
+        "country": "Brunei",
+        "sector": "Manufacturing",
+        "emissions": 13.06
+      },
+      {
+        "year": 2009,
+        "country": "Brunei",
+        "sector": "Transport",
+        "emissions": 15.07
+      },
+      {
+        "year": 2010,
+        "country": "Malaysia",
+        "sector": "Manufacturing",
+        "emissions": 16.04
+      },
+      {
+        "year": 2010,
+        "country": "Malaysia",
+        "sector": "Transport",
+        "emissions": 23.23
+      },
+      {
+        "year": 2010,
+        "country": "Indonesia",
+        "sector": "Manufacturing",
+        "emissions": 24.59
+      },
+      {
+        "year": 2010,
+        "country": "Indonesia",
+        "sector": "Transport",
+        "emissions": 26.89
+      },
+      {
+        "year": 2010,
+        "country": "Thailand",
+        "sector": "Manufacturing",
+        "emissions": 22.35
+      },
+      {
+        "year": 2010,
+        "country": "Thailand",
+        "sector": "Transport",
+        "emissions": 25.59
+      },
+      {
+        "year": 2010,
+        "country": "Vietnam",
+        "sector": "Manufacturing",
+        "emissions": 32.96
+      },
+      {
+        "year": 2010,
+        "country": "Vietnam",
+        "sector": "Transport",
+        "emissions": 24.21
+      },
+      {
+        "year": 2010,
+        "country": "Singapore",
+        "sector": "Manufacturing",
+        "emissions": 22.54
+      },
+      {
+        "year": 2010,
+        "country": "Singapore",
+        "sector": "Transport",
+        "emissions": 15.88
+      },
+      {
+        "year": 2010,
+        "country": "Philippines",
+        "sector": "Manufacturing",
+        "emissions": 16.24
+      },
+      {
+        "year": 2010,
+        "country": "Philippines",
+        "sector": "Transport",
+        "emissions": 30.79
+      },
+      {
+        "year": 2010,
+        "country": "Cambodia",
+        "sector": "Manufacturing",
+        "emissions": 3.9
+      },
+      {
+        "year": 2010,
+        "country": "Cambodia",
+        "sector": "Transport",
+        "emissions": 67.32
+      },
+      {
+        "year": 2010,
+        "country": "Myanmar",
+        "sector": "Manufacturing",
+        "emissions": 29.37
+      },
+      {
+        "year": 2010,
+        "country": "Myanmar",
+        "sector": "Transport",
+        "emissions": 29.11
+      },
+      {
+        "year": 2010,
+        "country": "Brunei",
+        "sector": "Manufacturing",
+        "emissions": 6.27
+      },
+      {
+        "year": 2010,
+        "country": "Brunei",
+        "sector": "Transport",
+        "emissions": 17.2
+      },
+      {
+        "year": 2011,
+        "country": "Malaysia",
+        "sector": "Manufacturing",
+        "emissions": 14.9
+      },
+      {
+        "year": 2011,
+        "country": "Malaysia",
+        "sector": "Transport",
+        "emissions": 23.31
+      },
+      {
+        "year": 2011,
+        "country": "Indonesia",
+        "sector": "Manufacturing",
+        "emissions": 20.15
+      },
+      {
+        "year": 2011,
+        "country": "Indonesia",
+        "sector": "Transport",
+        "emissions": 28.57
+      },
+      {
+        "year": 2011,
+        "country": "Thailand",
+        "sector": "Manufacturing",
+        "emissions": 19.91
+      },
+      {
+        "year": 2011,
+        "country": "Thailand",
+        "sector": "Transport",
+        "emissions": 27.13
+      },
+      {
+        "year": 2011,
+        "country": "Vietnam",
+        "sector": "Manufacturing",
+        "emissions": 34.22
+      },
+      {
+        "year": 2011,
+        "country": "Vietnam",
+        "sector": "Transport",
+        "emissions": 23.97
+      },
+      {
+        "year": 2011,
+        "country": "Singapore",
+        "sector": "Manufacturing",
+        "emissions": 22.53
+      },
+      {
+        "year": 2011,
+        "country": "Singapore",
+        "sector": "Transport",
+        "emissions": 16.15
+      },
+      {
+        "year": 2011,
+        "country": "Philippines",
+        "sector": "Manufacturing",
+        "emissions": 15.89
+      },
+      {
+        "year": 2011,
+        "country": "Philippines",
+        "sector": "Transport",
+        "emissions": 30.25
+      },
+      {
+        "year": 2011,
+        "country": "Cambodia",
+        "sector": "Manufacturing",
+        "emissions": 3.93
+      },
+      {
+        "year": 2011,
+        "country": "Cambodia",
+        "sector": "Transport",
+        "emissions": 67.98
+      },
+      {
+        "year": 2011,
+        "country": "Myanmar",
+        "sector": "Manufacturing",
+        "emissions": 29.88
+      },
+      {
+        "year": 2011,
+        "country": "Myanmar",
+        "sector": "Transport",
+        "emissions": 29.14
+      },
+      {
+        "year": 2011,
+        "country": "Brunei",
+        "sector": "Manufacturing",
+        "emissions": 6.7
+      },
+      {
+        "year": 2011,
+        "country": "Brunei",
+        "sector": "Transport",
+        "emissions": 18.26
+      },
+      {
+        "year": 2012,
+        "country": "Malaysia",
+        "sector": "Manufacturing",
+        "emissions": 16.56
+      },
+      {
+        "year": 2012,
+        "country": "Malaysia",
+        "sector": "Transport",
+        "emissions": 23.12
+      },
+      {
+        "year": 2012,
+        "country": "Indonesia",
+        "sector": "Manufacturing",
+        "emissions": 18.08
+      },
+      {
+        "year": 2012,
+        "country": "Indonesia",
+        "sector": "Transport",
+        "emissions": 31.23
+      },
+      {
+        "year": 2012,
+        "country": "Thailand",
+        "sector": "Manufacturing",
+        "emissions": 20.38
+      },
+      {
+        "year": 2012,
+        "country": "Thailand",
+        "sector": "Transport",
+        "emissions": 26.29
+      },
+      {
+        "year": 2012,
+        "country": "Vietnam",
+        "sector": "Manufacturing",
+        "emissions": 33.94
+      },
+      {
+        "year": 2012,
+        "country": "Vietnam",
+        "sector": "Transport",
+        "emissions": 23.73
+      },
+      {
+        "year": 2012,
+        "country": "Singapore",
+        "sector": "Manufacturing",
+        "emissions": 22.76
+      },
+      {
+        "year": 2012,
+        "country": "Singapore",
+        "sector": "Transport",
+        "emissions": 15.99
+      },
+      {
+        "year": 2012,
+        "country": "Philippines",
+        "sector": "Manufacturing",
+        "emissions": 14.28
+      },
+      {
+        "year": 2012,
+        "country": "Philippines",
+        "sector": "Transport",
+        "emissions": 30.46
+      },
+      {
+        "year": 2012,
+        "country": "Cambodia",
+        "sector": "Manufacturing",
+        "emissions": 4.15
+      },
+      {
+        "year": 2012,
+        "country": "Cambodia",
+        "sector": "Transport",
+        "emissions": 68.77
+      },
+      {
+        "year": 2012,
+        "country": "Myanmar",
+        "sector": "Manufacturing",
+        "emissions": 31.82
+      },
+      {
+        "year": 2012,
+        "country": "Myanmar",
+        "sector": "Transport",
+        "emissions": 26.49
+      },
+      {
+        "year": 2012,
+        "country": "Brunei",
+        "sector": "Manufacturing",
+        "emissions": 7.75
+      },
+      {
+        "year": 2012,
+        "country": "Brunei",
+        "sector": "Transport",
+        "emissions": 19.23
+      },
+      {
+        "year": 2013,
+        "country": "Malaysia",
+        "sector": "Manufacturing",
+        "emissions": 13.92
+      },
+      {
+        "year": 2013,
+        "country": "Malaysia",
+        "sector": "Transport",
+        "emissions": 27.99
+      },
+      {
+        "year": 2013,
+        "country": "Indonesia",
+        "sector": "Manufacturing",
+        "emissions": 17.95
+      },
+      {
+        "year": 2013,
+        "country": "Indonesia",
+        "sector": "Transport",
+        "emissions": 32.57
+      },
+      {
+        "year": 2013,
+        "country": "Thailand",
+        "sector": "Manufacturing",
+        "emissions": 20.43
+      },
+      {
+        "year": 2013,
+        "country": "Thailand",
+        "sector": "Transport",
+        "emissions": 25.23
+      },
+      {
+        "year": 2013,
+        "country": "Vietnam",
+        "sector": "Manufacturing",
+        "emissions": 34.28
+      },
+      {
+        "year": 2013,
+        "country": "Vietnam",
+        "sector": "Transport",
+        "emissions": 22.17
+      },
+      {
+        "year": 2013,
+        "country": "Singapore",
+        "sector": "Manufacturing",
+        "emissions": 24.89
+      },
+      {
+        "year": 2013,
+        "country": "Singapore",
+        "sector": "Transport",
+        "emissions": 15.38
+      },
+      {
+        "year": 2013,
+        "country": "Philippines",
+        "sector": "Manufacturing",
+        "emissions": 14.66
+      },
+      {
+        "year": 2013,
+        "country": "Philippines",
+        "sector": "Transport",
+        "emissions": 28.52
+      },
+      {
+        "year": 2013,
+        "country": "Cambodia",
+        "sector": "Manufacturing",
+        "emissions": 4.83
+      },
+      {
+        "year": 2013,
+        "country": "Cambodia",
+        "sector": "Transport",
+        "emissions": 68.53
+      },
+      {
+        "year": 2013,
+        "country": "Myanmar",
+        "sector": "Manufacturing",
+        "emissions": 28.97
+      },
+      {
+        "year": 2013,
+        "country": "Myanmar",
+        "sector": "Transport",
+        "emissions": 29.04
+      },
+      {
+        "year": 2013,
+        "country": "Brunei",
+        "sector": "Manufacturing",
+        "emissions": 6.13
+      },
+      {
+        "year": 2013,
+        "country": "Brunei",
+        "sector": "Transport",
+        "emissions": 19.42
+      },
+      {
+        "year": 2014,
+        "country": "Malaysia",
+        "sector": "Manufacturing",
+        "emissions": 12.97
+      },
+      {
+        "year": 2014,
+        "country": "Malaysia",
+        "sector": "Transport",
+        "emissions": 29.71
+      },
+      {
+        "year": 2014,
+        "country": "Indonesia",
+        "sector": "Manufacturing",
+        "emissions": 18.4
+      },
+      {
+        "year": 2014,
+        "country": "Indonesia",
+        "sector": "Transport",
+        "emissions": 30.81
+      },
+      {
+        "year": 2014,
+        "country": "Thailand",
+        "sector": "Manufacturing",
+        "emissions": 20.89
+      },
+      {
+        "year": 2014,
+        "country": "Thailand",
+        "sector": "Transport",
+        "emissions": 24.72
+      },
+      {
+        "year": 2014,
+        "country": "Vietnam",
+        "sector": "Manufacturing",
+        "emissions": 33.75
+      },
+      {
+        "year": 2014,
+        "country": "Vietnam",
+        "sector": "Transport",
+        "emissions": 22.28
+      },
+      {
+        "year": 2014,
+        "country": "Singapore",
+        "sector": "Manufacturing",
+        "emissions": 24.89
+      },
+      {
+        "year": 2014,
+        "country": "Singapore",
+        "sector": "Transport",
+        "emissions": 15.18
+      },
+      {
+        "year": 2014,
+        "country": "Philippines",
+        "sector": "Manufacturing",
+        "emissions": 14.5
+      },
+      {
+        "year": 2014,
+        "country": "Philippines",
+        "sector": "Transport",
+        "emissions": 27.83
+      },
+      {
+        "year": 2014,
+        "country": "Cambodia",
+        "sector": "Manufacturing",
+        "emissions": 2.62
+      },
+      {
+        "year": 2014,
+        "country": "Cambodia",
+        "sector": "Transport",
+        "emissions": 63.61
+      },
+      {
+        "year": 2014,
+        "country": "Myanmar",
+        "sector": "Manufacturing",
+        "emissions": 24.49
+      },
+      {
+        "year": 2014,
+        "country": "Myanmar",
+        "sector": "Transport",
+        "emissions": 36.61
+      },
+      {
+        "year": 2014,
+        "country": "Brunei",
+        "sector": "Manufacturing",
+        "emissions": 5.07
+      },
+      {
+        "year": 2014,
+        "country": "Brunei",
+        "sector": "Transport",
+        "emissions": 20.15
+      }
+    ]
+  },
+  "mark": "rect",
+  "width": 300,
+  "height": 200,
+  "encoding": {
+    "x": {
+      "field": "sector",
+      "type": "nominal",
+      "title": "Sector",
+      "axis": {"labelAngle": 0}
+    },
+    "y": {
+      "field": "country",
+      "type": "nominal",
+      "title": "Country",
+      "axis": {"labelFontSize": 10}
+    },
+    "color": {
+      "field": "emissions",
+      "type": "quantitative",
+      "title": "CO2 Emissions",
+      "scale": {"scheme": "reds"}
+    },
+    "tooltip": [
+      {"field": "country", "type": "nominal", "title": "Country"},
+      {"field": "sector", "type": "nominal", "title": "Sector"},
+      {
+        "field": "emissions",
+        "type": "quantitative",
+        "title": "CO2 Emissions (%)"
+      },
+      {"field": "year", "type": "ordinal", "title": "Year"}
+    ]
+  },
+  "selection": {
+    "yearSelect": {
+      "type": "single",
+      "fields": ["year"],
+      "bind": {
+        "input": "range",
+        "min": 2000,
+        "max": 2014,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  },
+  "transform": [{"filter": {"selection": "yearSelect"}}],
+  "config": {"axis": {"labelFontSize": 12, "titleFontSize": 14}}
+}
