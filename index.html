@@ -41,46 +41,14 @@
             margin: 0 auto;
         }
 
-        .vis-container:nth-child(even) .insight {
-            float: left;
-            width: 45%;
-            margin-right: 5%;
-        }
-
-        .vis-container:nth-child(even) .chart {
-            float: right;
-            width: 45%;
-        }
-
-        .vis-container:nth-child(odd) .chart {
-            float: left;
-            width: 45%;
-            margin-right: 5%;
-        }
-
-        .vis-container:nth-child(odd) .insight {
-            float: right;
-            width: 45%;
-        }
-
-        .clear {
-            clear: both;
-        }
-
         .annotation-box {
             margin-top: 20px;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             background-color: #f5f7fa;
             padding: 20px;
             border-radius: 8px;
             font-size: 1.1em;
             color: #333;
-        }
-
-        .annotation-box h3 {
-            font-size: 1.4em;
-            color: #555;
-            margin-bottom: 15px;
         }
 
         .metadata {
@@ -109,7 +77,7 @@
             font-size: 24px;
             font-weight: bold;
             margin-top: 10px;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -120,49 +88,37 @@
 
     <!-- Map Visualization -->
     <div class="vis-container">
-        <div id="map" class="chart"></div>
-        <div class="clear"></div>
-        <div class="annotation-box">The CO2 emissions per capita across the globe, highlighting the largest emitters and trends over the years from 2000 to 2020.</div>
+        <h2 class="title">CO2 Emissions by Country (2000-2020)</h2>
+        <div id="map"></div>
+        <div class="annotation-box">Insight: The CO2 emissions per capita across the globe, highlighting the largest emitters and trends over the years from 2000 to 2020. Developed nations such as the United States and China consistently display high levels of emissions, while Southeast Asian countries, including Malaysia and Indonesia, show an upward trend, correlating with economic growth and increased industrial activities.</div>
     </div>
 
     <!-- Bubble Chart Visualization -->
     <div class="vis-container">
-        <div class="insight">
-            <p><strong>Insight:</strong> Countries like Vietnam and Myanmar exhibit large renewable energy capacity and production, suggesting significant efforts in utilizing renewable resources. Conversely, countries such as Cambodia and Indonesia show considerable renewable capacity but slightly lag behind in production, indicating room for efficiency improvements.</p>
-        </div>
-        <div class="chart" id="bubble-chart"></div>
-        <div class="clear"></div>
         <h2 class="title">Renewable Energy Capacity vs. Production by Country</h2>
+        <div id="bubble-chart"></div>
+        <div class="annotation-box">Insight: Countries like Vietnam and Myanmar exhibit large renewable energy capacity and production, suggesting significant efforts in utilizing renewable resources. Conversely, countries such as Cambodia and Indonesia show considerable renewable capacity but slightly lag behind in production, indicating room for efficiency improvements.</div>
     </div>
 
     <!-- Stacked Bar Chart Visualization -->
     <div class="vis-container">
-        <div class="chart" id="bar-chart"></div>
-        <div class="insight">
-            <p><strong>Insight:</strong> Southeast Asian countries like Indonesia and Thailand show substantial emissions from both manufacturing and transport sectors, indicating the key contributors to their overall emissions. Countries such as Brunei and Cambodia, with smaller industrial bases, exhibit much lower emissions.</p>
-        </div>
-        <div class="clear"></div>
         <h2 class="title">CO2 Emissions by Sector</h2>
+        <div id="bar-chart"></div>
+        <div class="annotation-box">Insight: Southeast Asian countries like Indonesia and Thailand show substantial emissions from both manufacturing and transport sectors, indicating key contributors to their overall emissions. Countries such as Brunei and Cambodia, with smaller industrial bases, exhibit much lower emissions.</div>
     </div>
 
     <!-- Heatmap Visualization -->
     <div class="vis-container">
-        <div class="insight">
-            <p><strong>Insight:</strong> The heatmap shows that countries like Vietnam, Indonesia, and Thailand have consistently high emissions in both manufacturing and transport sectors. Malaysia also has notable emissions, especially from transport. This heatmap effectively highlights sectoral disparities and identifies countries where transport and manufacturing are significant pollution sources.</p>
-        </div>
-        <div class="chart" id="heatmap"></div>
-        <div class="clear"></div>
         <h2 class="title">Regional Trends of CO2 Emissions from Manufacturing and Transport</h2>
+        <div id="heatmap"></div>
+        <div class="annotation-box">Insight: The heatmap shows that countries like Vietnam, Indonesia, and Thailand have consistently high emissions in both manufacturing and transport sectors. Malaysia also has notable emissions, especially from transport. This heatmap effectively highlights sectoral disparities and identifies countries where transport and manufacturing are significant pollution sources.</div>
     </div>
 
     <!-- Bar Chart Visualization -->
     <div class="vis-container">
-        <div class="chart" id="gdp-bar-chart"></div>
-        <div class="insight">
-            <p><strong>Insight:</strong> Middle-income countries like Vietnam demonstrate high renewable energy capacity, signaling their strategic investment in clean energy. In contrast, wealthier nations like Singapore show relatively lower renewable capacity, which may be due to geographic and infrastructural limitations.</p>
-        </div>
-        <div class="clear"></div>
         <h2 class="title">Renewable Energy Capacity vs GDP per Capita by Group</h2>
+        <div id="gdp-bar-chart"></div>
+        <div class="annotation-box">Insight: Middle-income countries like Vietnam demonstrate high renewable energy capacity, signaling their strategic investment in clean energy. In contrast, wealthier nations like Singapore show relatively lower renewable capacity, which may be due to geographic and infrastructural limitations.</div>
     </div>
 
     <div class="metadata">
