@@ -4,98 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CO2 Emissions and Renewable Energy in Southeast Asia</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        h1, h2 {
-            text-align: center;
-            font-family: Georgia, serif;
-            font-weight: bold;
-        }
-        .section {
-            margin: 40px 0;
-        }
-        .insight {
-            text-align: center;
-            margin-top: 20px;
-            font-style: italic;
-            padding: 0 15%;
-        }
-        .graph-container {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-        .graph-container img {
-            max-width: 80%;
-        }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
 </head>
 <body>
     <h1>CO2 Emissions and Renewable Energy in Southeast Asia</h1>
-    <p style="text-align: center; padding: 0 10%;">This visualization explores CO2 emissions trends and renewable energy developments in Southeast Asia from 2000 to 2020. The focus is on visualizing the changes in emissions across different sectors and countries, as well as the investments made in renewable energy.</p>
+    <h2>CO2 Emissions by Country (2000-2020)</h2>
+    <div id="vis1"></div>
 
-    <!-- Map -->
-    <div class="section">
-        <h2>CO2 Emissions by Country (2000-2020)</h2>
-        <div class="graph-container">
-            <img src="your_image_path/map.png" alt="CO2 Emissions Map">
-        </div>
-        <div class="insight">
-            Insight: The CO2 emissions per capita across the globe, highlighting the largest emitters and trends over the years from 2000 to 2020. Developed nations such as the United States and China consistently display high levels of emissions, while Southeast Asian countries, including Malaysia and Indonesia, show an upward trend, correlating with their economic growth and increased industrial activities.
-        </div>
-    </div>
+    <h2>Renewable Energy Capacity vs. Production by Country</h2>
+    <div id="vis2"></div>
 
-    <!-- Bubble Chart -->
-    <div class="section">
-        <h2>Renewable Energy Capacity vs. Production by Country</h2>
-        <div class="graph-container">
-            <img src="your_image_path/bubble_chart.png" alt="Renewable Energy Capacity vs. Production by Country">
-        </div>
-        <div class="insight">
-            Insight: Countries like Vietnam and Myanmar exhibit large renewable energy capacity and production, suggesting significant efforts in utilizing renewable resources. Conversely, countries such as Cambodia and Indonesia show considerable renewable capacity but slightly lag behind in production, indicating room for efficiency improvements.
-        </div>
-    </div>
+    <h2>CO2 Emissions by Sector</h2>
+    <div id="vis3"></div>
 
-    <!-- Stacked Bar Chart -->
-    <div class="section">
-        <h2>CO2 Emissions by Sector</h2>
-        <div class="graph-container">
-            <img src="your_image_path/stacked_bar_chart.png" alt="CO2 Emissions by Sector">
-        </div>
-        <div class="insight">
-            Insight: Southeast Asian countries like Indonesia and Thailand show substantial emissions from both manufacturing and transport sectors, indicating key contributors to their overall emissions. Countries such as Brunei and Cambodia, with smaller industrial bases, exhibit much lower emissions.
-        </div>
-    </div>
+    <h2>Regional Trends of CO2 Emissions from Manufacturing and Transport</h2>
+    <div id="vis4"></div>
 
-    <!-- Heatmap -->
-    <div class="section">
-        <h2>Regional Trends of CO2 Emissions from Manufacturing and Transport</h2>
-        <div class="graph-container">
-            <img src="your_image_path/heatmap.png" alt="Regional Trends of CO2 Emissions">
-        </div>
-        <div class="insight">
-            Insight: The heatmap shows that countries like Vietnam, Indonesia, and Thailand have consistently high emissions in both manufacturing and transport sectors. Malaysia also has notable emissions, especially from transport. This heatmap effectively highlights sectoral disparities and identifies countries where transport and manufacturing are significant pollution sources.
-        </div>
-    </div>
+    <h2>Renewable Energy Capacity vs GDP per Capita by Group</h2>
+    <div id="vis5"></div>
 
-    <!-- Final Chart -->
-    <div class="section">
-        <h2>Renewable Energy Capacity vs GDP per Capita by Group</h2>
-        <div class="graph-container">
-            <img src="your_image_path/final_chart.png" alt="Renewable Energy Capacity vs GDP per Capita">
-        </div>
-        <div class="insight">
-            Insight: Middle-income countries like Vietnam demonstrate high renewable energy capacity, signaling their strategic investment in clean energy. In contrast, wealthier nations like Singapore show relatively lower renewable capacity, which may be due to geographic and infrastructural limitations.
-        </div>
-    </div>
+    <script type="text/javascript">
+        // Visualization 1 - CO2 Emissions Map
+        vegaEmbed('#vis1', {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "description": "CO2 Emissions by Country (2000-2020)",
+            "width": 700,
+            "height": 400,
+            "projection": {"type": "equalEarth"},
+            "layer": [
+                {
+                    "data": {
+                        "url": "https://gist.githubusercontent.com/jrrickard/8755532505a40f3b8317/raw/ecd98849d3a5f4502b773b986254f19af3b8d8fb/oceans.topo.json",
+                        "format": {"type": "topojson", "feature": "oceans"}
+                    },
+                    "mark": {"type": "geoshape", "fill": "skyblue"}
+                },
+                {
+                    "data": {"graticule": true},
+                    "mark": {"type": "geoshape", "stroke": "lightgray", "strokeWidth": 0.5}
+                },
+                {
+                    "data": {
+                        "url": "https://raw.githubusercontent.com/GottaGitGitBoomBoomBoom/FIT3179/refs/heads/main/ne_110m.json",
+                        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+                    },
+                    "transform": [
+                        {
+                            "lookup": "properties.NAME",
+                            "from": {
+                                "data": {
+                                    "url": "https://raw.githubusercontent.com/GottaGitGitBoomBoomBoom/FIT3179/refs/heads/main/CO2%20Emissions%20Data%20(metric%20tons%20per%20capita).csv",
+                                    "format": {"type": "csv"}
+                                },
+                                "key": "Country Name",
+                                "fields": [
+                                    "2000", "2001", "2002", "2003", "2004", "2005",
+                                    "2006", "2007", "2008", "2009", "2010", "2011",
+                                    "2012", "2013", "2014", "2015", "2016", "2017",
+                                    "2018", "2019", "2020"
+                                ]
+                            }
+                        },
+                        {"calculate": "datum['2020']", "as": "co2_emissions"}
+                    ],
+                    "mark": {"type": "geoshape"},
+                    "encoding": {
+                        "color": {
+                            "field": "co2_emissions",
+                            "type": "quantitative",
+                            "scale": {
+                                "domain": [0, 15],
+                                "range": ["#fee5d9", "#fcae91", "#fb6a4a", "#de2d26", "#a50f15"]
+                            },
+                            "legend": {"title": "CO2 Emissions (Metric Tons)", "orient": "right", "offset": 20}
+                        },
+                        "tooltip": [
+                            {"field": "properties.NAME", "type": "nominal", "title": "Country:"},
+                            {"field": "co2_emissions", "type": "quantitative", "title": "CO2 Emissions:", "format": ".2f"}
+                        ]
+                    }
+                }
+            ]
+        });
 
-    <footer style="text-align: center; padding: 20px;">
-        <p>Author: [Your Name]</p>
-        <p>Data Sources: International Energy Agency (IEA), World Bank</p>
-    </footer>
+        // Visualization 2 - Renewable Energy Capacity vs Production by Country
+        vegaEmbed('#vis2', {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "description": "Renewable Energy Capacity vs Production by Country",
+            "data": {
+                "values": [
+                    {"Country": "Malaysia", "Year": 2014, "Renewable_Capacity": 21.6, "Renewable_Production": 9.9},
+                    {"Country": "Indonesia", "Year": 2014, "Renewable_Capacity": 15.4, "Renewable_Production": 14.5},
+                    // Add more data values here
+                ]
+            },
+            "mark": "circle",
+            "encoding": {
+                "x": {"field": "Renewable_Capacity", "type": "quantitative", "title": "Renewable Energy Capacity (%MW)"},
+                "y": {"field": "Renewable_Production", "type": "quantitative", "title": "Renewable Energy Production (%GWh)"},
+                "size": {"field": "Renewable_Production", "type": "quantitative"},
+                "color": {"field": "Country", "type": "nominal"},
+                "tooltip": [
+                    {"field": "Country", "type": "nominal"},
+                    {"field": "Renewable_Capacity", "type": "quantitative", "title": "Capacity (%MW)"},
+                    {"field": "Renewable_Production", "type": "quantitative", "title": "Production (%GWh)"}
+                ]
+            }
+        });
+
+        // Additional visualizations can be added here in a similar way.
+    </script>
 </body>
 </html>
