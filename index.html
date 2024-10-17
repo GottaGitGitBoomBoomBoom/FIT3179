@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CO2 Emissions in Southeast Asia</title>
+    <title>CO2 Emissions and Renewable Energy in Southeast Asia</title>
 
     <!-- Vega and Vega-Lite Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
@@ -41,18 +41,46 @@
             margin: 0 auto;
         }
 
-        .map-container, .bubble-chart-container, .line-chart-container, .heatmap-container, .streamgraph-container {
-            width: 100%;
-            position: relative;
-            z-index: 1;
-            margin-bottom: 30px;
+        .vis-container:nth-child(even) .insight {
+            float: left;
+            width: 45%;
+            margin-right: 5%;
+        }
+
+        .vis-container:nth-child(even) .chart {
+            float: right;
+            width: 45%;
+        }
+
+        .vis-container:nth-child(odd) .chart {
+            float: left;
+            width: 45%;
+            margin-right: 5%;
+        }
+
+        .vis-container:nth-child(odd) .insight {
+            float: right;
+            width: 45%;
+        }
+
+        .clear {
+            clear: both;
         }
 
         .annotation-box {
-            margin-top: 10px;
-            font-size: 14px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            background-color: #f5f7fa;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 1.1em;
             color: #333;
-            font-weight: bold;
+        }
+
+        .annotation-box h3 {
+            font-size: 1.4em;
+            color: #555;
+            margin-bottom: 15px;
         }
 
         .metadata {
@@ -75,54 +103,66 @@
         .metadata p {
             margin: 2px 0;
         }
+
+        .title {
+            font-family: Georgia, serif;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
     </style>
 </head>
 <body>
 
     <h1>CO2 Emissions and Renewable Energy in Southeast Asia</h1>
-
-    <p>
-        This visualization explores CO2 emissions trends and renewable energy developments in Southeast Asia from 2000 to 2020. The focus is on visualizing the changes in emissions across different sectors and countries, as well as the investments made in renewable energy.
-    </p>
+    <p>This visualization explores CO2 emissions trends and renewable energy developments in Southeast Asia from 2000 to 2020. The focus is on visualizing the changes in emissions across different sectors and countries, as well as the investments made in renewable energy.</p>
 
     <!-- Map Visualization -->
     <div class="vis-container">
-        <div class="map-container" id="map"></div> <!-- Container for the map -->
-        <div class="annotation-box"> 
-            The CO2 emissions per capita across the globe, highlighting the largest emitters and trends over the years from 2000 to 2020.
-        </div>
+        <div id="map" class="chart"></div>
+        <div class="clear"></div>
+        <div class="annotation-box">The CO2 emissions per capita across the globe, highlighting the largest emitters and trends over the years from 2000 to 2020.</div>
     </div>
 
     <!-- Bubble Chart Visualization -->
     <div class="vis-container">
-        <div class="bubble-chart-container" id="bubble-chart"></div> <!-- Container for the bubble chart -->
-        <div class="annotation-box"> 
-            Explore the relationship between renewable energy investment and CO2 reductions in Southeast Asia from 2014 to 2022.
+        <div class="insight">
+            <p><strong>Insight:</strong> Countries like Vietnam and Myanmar exhibit large renewable energy capacity and production, suggesting significant efforts in utilizing renewable resources. Conversely, countries such as Cambodia and Indonesia show considerable renewable capacity but slightly lag behind in production, indicating room for efficiency improvements.</p>
         </div>
+        <div class="chart" id="bubble-chart"></div>
+        <div class="clear"></div>
+        <h2 class="title">Renewable Energy Capacity vs. Production by Country</h2>
     </div>
 
-    <!-- Line Chart Visualization -->
+    <!-- Stacked Bar Chart Visualization -->
     <div class="vis-container">
-        <div class="line-chart-container" id="line-chart"></div> <!-- Container for the line chart -->
-        <div class="annotation-box"> 
-            The CO2 emissions by sector in Southeast Asia, comparing key industries like manufacturing and transport over time.
+        <div class="chart" id="bar-chart"></div>
+        <div class="insight">
+            <p><strong>Insight:</strong> Southeast Asian countries like Indonesia and Thailand show substantial emissions from both manufacturing and transport sectors, indicating the key contributors to their overall emissions. Countries such as Brunei and Cambodia, with smaller industrial bases, exhibit much lower emissions.</p>
         </div>
+        <div class="clear"></div>
+        <h2 class="title">CO2 Emissions by Sector</h2>
     </div>
 
     <!-- Heatmap Visualization -->
     <div class="vis-container">
-        <div class="heatmap-container" id="heatmap"></div> <!-- Container for the heatmap -->
-        <div class="annotation-box"> 
-            Heatmap showing CO2 emissions in the manufacturing and transport sectors, highlighting regional trends.
+        <div class="insight">
+            <p><strong>Insight:</strong> The heatmap shows that countries like Vietnam, Indonesia, and Thailand have consistently high emissions in both manufacturing and transport sectors. Malaysia also has notable emissions, especially from transport. This heatmap effectively highlights sectoral disparities and identifies countries where transport and manufacturing are significant pollution sources.</p>
         </div>
+        <div class="chart" id="heatmap"></div>
+        <div class="clear"></div>
+        <h2 class="title">Regional Trends of CO2 Emissions from Manufacturing and Transport</h2>
     </div>
 
-    <!-- Streamgraph Visualization -->
+    <!-- Bar Chart Visualization -->
     <div class="vis-container">
-        <div class="streamgraph-container" id="streamgraph"></div> <!-- Container for the streamgraph -->
-        <div class="annotation-box"> 
-            Renewable energy capacity compared to GDP per capita, showcasing the growth in clean energy investment across Southeast Asia.
+        <div class="chart" id="gdp-bar-chart"></div>
+        <div class="insight">
+            <p><strong>Insight:</strong> Middle-income countries like Vietnam demonstrate high renewable energy capacity, signaling their strategic investment in clean energy. In contrast, wealthier nations like Singapore show relatively lower renewable capacity, which may be due to geographic and infrastructural limitations.</p>
         </div>
+        <div class="clear"></div>
+        <h2 class="title">Renewable Energy Capacity vs GDP per Capita by Group</h2>
     </div>
 
     <div class="metadata">
